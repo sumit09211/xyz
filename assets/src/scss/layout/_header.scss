@@ -1,0 +1,119 @@
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    z-index: 1002;
+    background: $primary;
+    // box-shadow: $box-shadow-header;
+    transition: $transition-base;
+    .navbar{
+    	display: flex;
+    	justify-content: space-between;
+    }
+    .navbar-nav{
+    	align-item: center;
+    }
+}
+
+.navbar-nav .nav-link {
+    color: #8182f7;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 5px 15px !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: $white
+}
+
+//  Top Navigation
+.header-menu{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding-left: $gutter-width;
+    @include breakpoint(sm){
+        padding-left: $gutter-space;
+    }
+}
+
+.top-menu{
+	display: flex;
+    align-items: center;
+    flex-flow: nowrap;
+	>li{
+		margin-left: 10px;
+    	display: inline-block;
+		>a{
+			border-radius:100px;
+		    border:1px solid #F6F6F6;
+		    display:block;
+		    color: #666666;
+		    font-size: 16px;
+		    padding: 0 9px 0 0;
+		    background: #f6f6f6;
+		    >.badge{
+		    	position: absolute;
+			    right: -10px;
+			    top: -10px;
+			    z-index: 100;
+		    }
+		    &:hover,
+		    &:focus{
+		    	border:1px solid #f6f6f6;
+			    background:#f6f6f6;
+			    border-radius:100px;
+		    }
+		}
+		&:last-child > a{
+			border-radius: 0;
+			background: none;
+			border: none;
+			padding: 0;
+			&:hover{
+				background: none
+			}
+		}
+	}
+	.user-n{
+	    border-radius: 50%;
+	    width: 33px;
+	    background: $primary;
+	    display: inline-block;
+	    height: 33px;
+	    line-height: 33px;
+	    vertical-align: middle;
+	    text-align: center;
+	    color: $white;
+        font-size:14px;
+	}
+    img {
+        border-radius:50%;
+        width:33px;
+    }
+}
+
+
+/*search*/
+.search {
+    width:20px;
+    height: 37px;
+    transition:all .3s ease;
+    border:1px solid $white;
+    box-shadow:none;
+    background:#f6f6f6 url("../images/search-icon.png") no-repeat 10px 8px;
+    padding:0 5px 0 30px;
+    color:$white;
+    border-radius:100px;
+    &:focus{
+        width:180px;
+        border:1px solid #f6f6f6;
+        box-shadow:none;
+        transition:all .3s ease;
+        color:#c8c8c8;
+    }
+}

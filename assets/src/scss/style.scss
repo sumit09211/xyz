@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'helpers/variables.scss';
+@import 'helpers/mixins.scss';
+@import 'helpers/functions.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
+@import 'plugins/bootstrap-multiselect.scss';
+@import 'plugins/datatables.scss';
+@import 'plugins/datepicker.scss';
+
+@import 'base/global.scss';
+@import 'base/reset.scss';
+@import 'base/typography.scss';
+
+@import 'component/buttons.scss';
+@import 'component/dropdowns.scss';
+@import 'component/forms.scss';
+@import 'component/pagination.scss';
+@import 'component/datatables.scss';
+@import 'component/bootstrap-multiselect.scss';
+
+@import 'layout/header.scss';
+@import 'layout/sidebar.scss';
+@import 'layout/content.scss';
+@import 'layout/footer.scss';
+
+@import 'template/login.scss';
+@import 'template/dashboard.scss';
+
+.bg-primary{
+  background: $primary !important;
+}
+.text-faded{
+  color: rgba(255,255,255,0.5) !important;
+}
+
+.profile-overview{
+  // margin-top: -80px;
+  // padding:15px;
+  margin-bottom: 20px;
+}
+.profile-overview img{
+  border: 2px dashed #FFC107;
+    padding: 3px;
+    border-radius: 100%;
+}
+.profile-info{
+  margin-top: 15px;
+}
+
+// Profile Overview Secondary
+
+.profile-overview-sec{
+  background: #fff;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: $box-shadow-light;
+}
+
+// Newsfeed
+
+.newsfeed-post{
+  padding: 25px 0 25px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 25px;
+}
+.newsfeed-item{
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.newsfeed-item:last-child{
+  border-bottom: 0;
+}
+
+
+// component : Nav Tabs
+
+.nav-tabs .nav-link.active{
+  font-weight: $font-weight-bold;
+}
+
+// Feature
+
+.feature{
+  background: #3647a9;
+  border-radius: 4px;
+}
+
+// other info
+
+.other-info{
+  color: color(primary, dark);
+  background: #f1f6fd;
+  padding: 15px;
+  box-shadow: 0 4px 18px 3px rgba(8,143,220,0.07);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+// timetable
+
+.timetable{
+  padding: 20px 15px;
+}

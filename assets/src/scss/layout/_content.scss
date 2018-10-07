@@ -1,0 +1,49 @@
+.app-main-content{
+  height: $full;
+  position: relative;
+  flex: 1;
+  padding-top: 20px;
+}
+.app-content {
+    // margin-left: $sidebar-width;
+    width: $full;
+    transition: $transition-base;
+    display: flex;
+    flex-flow: column nowrap;
+    // padding-top: 30px;
+    // width: calc(100% - #{$sidebar-width});
+    @include breakpoint(sm){
+        margin-left: 0;
+        width: $full;
+    }
+    .app-wrapper {
+	    padding: $gutter-space;
+	    width: $full;
+	    flex: 1;
+        position: relative;
+
+        // @include breakpoint(sm){
+        //     margin-top: $header-height-m;
+        // }
+	}
+}
+.app-main-content:before{
+  content: "";
+  height: 254px;
+  background: #3F51B5;
+  background: $primary;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.content-header{
+    .btn-filter{
+        margin-bottom: 10px;
+    }
+}
+
+.organisation-filter {
+    width: 100%;
+    max-width: 300px;
+}

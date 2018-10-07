@@ -1,0 +1,127 @@
+
+.app-sidebar {
+  padding: $gutter-space;
+}
+.sidebar-menu{
+        // @include breakpoint(sm) {
+        //     padding-top: $header-height-m;
+        // }
+    > li{
+        position: relative;
+        border-bottom:1px solid rgba(255,255,255,0.05);
+        > a{
+            color:#d6d7e2;
+            display:block;
+            padding:18px 0 18px 25px;
+            font-size:12px;
+            transition: $transition-base;
+            white-space: nowrap;
+            .sidebar-collapse &{
+                padding: 18px;
+                text-align: center;
+            }
+            &:hover,
+            &:focus,
+            &.active{
+                background:#3f4379;
+                color: $white;
+                display: block;
+                transition: $transition-base;
+            }
+            i{
+                font-size:15px;
+                width: 24px;
+                padding-right:6px;
+            }
+            .nav-text{
+                display:inline-block;
+                .sidebar-collapse &{
+                    position: absolute;
+                    left: 70px;
+                    top: 0;
+                    background: #1f1f25;
+                    padding: 18px;
+                    width: 220px;
+                    display: none;
+                    text-align: left;
+                }
+            }
+
+        }
+        &.sub-menu{
+            > a {
+                &:after{
+                    content: "";
+                    height:17px;
+                    width:17px;
+                    background:url(../images/nav-expand.png) no-repeat top;
+                    position:absolute;
+                    right:10px;
+                    .sidebar-collapse &{
+                        background: none;
+                    }
+                }
+            }
+            &.active{
+                > a {
+                    &:after{
+                        background:url(../images/nav-expand.png) no-repeat bottom;
+                        .sidebar-collapse & {
+                            background: none;
+                        }
+                    }
+                }
+            }
+        }
+        .sub{
+            display: none;
+            position: relative;
+            .sidebar-collapse &{
+                position: absolute;
+                left: 70px;
+                top: 54px;
+                width: 220px;
+                display: none !important;
+            }
+            li{
+                background:#28282e;
+                border-bottom:none;
+                a{
+                    font-size:12px;
+                    padding-top:13px;
+                    padding-bottom:13px;
+                    transition:$transition-base;
+                    color:#aeb2b7;
+                    padding-left:$gutter-space * 3;
+                    display: block;
+
+                    .sidebar-collapse &{
+                        text-align: left;
+                        padding-left: 18px;
+                    }
+                    &:hover,
+                    &:focus{
+                        color: $primary;
+                        transition: $transition-base;
+                        display: block;
+                        background: #202025;
+                    }
+                    &.subactive{
+                        color: $primary;
+                        transition: $transition-base;
+                        display: block;
+                        background: #202025;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar-collapse .sidebar-menu li:hover .sub{
+    display: block !important;
+}
+
+.sidebar-collapse .sidebar-menu li:hover .nav-text{
+    display: block;
+}

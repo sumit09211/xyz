@@ -1,0 +1,49 @@
+/*login page*/
+.app-login-page {
+    background: $primary url(../images/login_1.jpg);
+}
+.app-login-container{
+    width: $full;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $full;
+    .app-login{
+        width: $full;
+        max-width: 370px;
+        background: $white;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: $gutter-space 20px;
+        box-shadow: $box-shadow-normal;
+        .brand{
+            background-color: #e86d0d;
+            padding: 30px;
+        }
+    }
+}
+
+.form-signin a,
+.form-signin a:hover {
+    color:#1fb5ac;
+}
+.form-signin a:hover {
+    text-decoration:underline;
+}
+
+.form-actions{
+    .btn-login{
+        background:#e86d0d;
+        border-radius:0;
+        color:#fff;
+        &:hover{
+            background:#e38c48;
+        }
+     }
+}
+@media(max-width:768px){
+    .app-login-container {
+        justify-content: center;
+        margin: 15px;
+    }
+}

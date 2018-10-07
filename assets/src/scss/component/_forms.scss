@@ -1,0 +1,40 @@
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.control-label {
+    font-weight: $font-weight-medium;
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.form-control {
+    box-shadow: none;
+    color: #c2c2c2;
+    font-size: 13px;
+    padding: .5rem 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+    border-radius: 0;
+}
+.form-control:focus{
+    border-bottom-color: $primary;
+    box-shadow: none;
+}
+
+
+input[type="file"]{
+    height: 35px;
+    padding: 0.3rem 0.75rem;
+}
+.form-control.error{
+    border-color:red;
+}
+
+
+
+.has-success .form-control:focus,
+.has-error .form-control:focus,
+.has-warning .form-control:focus {
+    box-shadow: none;
+}
