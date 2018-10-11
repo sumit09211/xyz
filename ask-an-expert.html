@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo SCSS Project</title>
+	<link rel="stylesheet" href="assets/build/css/style.css">
+</head>
+<body>
+<div id="app" class="app">
+	<div class="app-site">
+		<div class="app-main">
+			<!-- Header Starts -->
+			<header class="app-header">
+				<nav class="navbar navbar-expand-md w-100 navbar-dark bg-primary">
+					  <!-- Brand -->
+					  <a class="navbar-brand" href="#"><img src="assets/build/images/logo.png" alt="" width="110"></a>
+
+					  <!-- Toggler/collapsibe Button -->
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <!-- Links -->
+					    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+							  <ul class="navbar-nav mr-auto ml-auto">
+							    <li class="nav-item">
+							      <a class="nav-link" href="index.html">Home</a>
+							    </li>
+							    <li class="nav-item">
+							      <a class="nav-link" href="profile.html">Profile</a>
+							    </li>
+									<li class="nav-item">
+							      <a class="nav-link" href="speakup.html">Speak Up</a>
+							    </li>
+							    <li class="nav-item">
+							      <a class="nav-link active" href="ask-an-expert.html">Ask an Expert</a>
+							    </li>
+									<li class="nav-item">
+							      <a class="nav-link" href="lekhni.html">Lekhni</a>
+							    </li>
+							    <li class="nav-item">
+							      <a class="nav-link" href="community.html">Community</a>
+							    </li>
+							  </ul>
+								<ul class="navbar-nav">
+
+							    <!-- Dropdown -->
+							    <li class="nav-item dropdown nav-user">
+							      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							        <span class="user-fig"><img src="assets/build/images/man.png" alt="" class="rounded-circle" width="35"></span>
+							        <span class="user-name">Sumit</span>
+							      </a>
+							      <div class="dropdown-menu dropdown-menu-right dropdown-animation">
+							        <a class="dropdown-item" href="#">Profile</a>
+							        <a class="dropdown-item" href="#">Setting</a>
+							        <a class="dropdown-item" href="#">Logout</a>
+							      </div>
+							    </li>
+							  </ul>
+							</div>
+							</nav>
+					</header>
+			<!-- Header Ends -->
+
+			<!-- Content Starts -->
+			<section class="app-main-content d-flex w-100">
+				<div class="sidebar col-md-3">
+							<aside class="app-sidebar">
+								<div class="profile-overview text-center">
+									<div class="avatar">
+										<img src="assets/build/images/man.png" alt="" width="80">
+									</div>
+									<div class="profile-info">
+										<h4 class="text-white mb-1">Sumit Kumar</h4>
+										<p class="text-faded">Student . Class 8th - C</p>
+										<!-- <p class="text-faded">sumit09211@gmail.com</p> -->
+									</div>
+									<div class="follows">
+										<div class="row">
+											<div class="col-md-6 text-left pl-5">
+												<a href="#" class="btn btn-info" title="Print Admit Card">Print</a>
+												<!-- <h4 class="text-white mb-0">24</h4>
+												<div class="text-faded small">Following</div> -->
+											</div>
+											<div class="col-md-6 text-left pl-5">
+												<a href="#" class="btn btn-warning" title="Follow Sumit kumar">Follow</a>
+												<!-- <h4 class="text-white mb-0">52</h4>
+												<div class="text-faded small">Followers</div> -->
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="other-info">
+									<h4>Recent Question</h4>
+									<ul class="list">
+										<li><a href="#">Jan(10)</a></li>
+										<li><a href="#">Feb(15)</a></li>
+										<li><a href="#">Mar(25)</a></li>
+										<li><a href="#">Oct(85)</a></li>
+									</ul>
+								</div>
+								<div class="other-info">
+									<h4>More Important Question</h4>
+									<ul class="list">
+										<li><a href="#">Basant</a></li>
+										<li><a href="#">Anuradha</a></li>
+										<li><a href="#">Abbudheesh</a></li>
+									</ul>
+								</div>
+								<!-- <div class="other-info">
+									<h4>Asked by you</h4>
+									<ul class="list">
+										<li><a href="#">Basant</a></li>
+										<li><a href="#">Anuradha</a></li>
+										<li><a href="#">Abbudheesh</a></li>
+									</ul>
+								</div> -->
+							</aside>
+				</div>
+				<!-- Main Content Starts -->
+				<section class="app-content col-md-9">
+							<div class="app-wrapper">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="text-center text-white p-2 py-4 mb-3 feature">
+											Lorem Ipsum#3d4eaf
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="text-center text-white p-2 py-4 mb-3 feature">
+											Lorem Ipsum#3d4eaf
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="text-center text-white p-2 py-4 mb-3 feature">
+											Lorem Ipsum#3d4eaf
+										</div>
+									</div>
+								</div>
+								<div class="other-info">
+									<h4>Ask an Expert</h4>
+									<form action="">
+									<div class="row">
+
+											<div class="form-group col-sm-12">
+												<label for="" class="control-label">Enter the Subject</label>
+												<input type="text" class="form-control" placeholder="Enter the Subject">
+											</div>
+											<div class="form-group col-sm-12">
+												<label for="" class="control-label">Select the Faculty</label>
+												<select class="form-control" id="">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+												</select>
+											</div>
+											<div class="form-group col-sm-12">
+												<label for="" class="control-label">Enter the Question</label>
+												<input type="text" class="form-control" placeholder="Enter the Question">
+											</div>
+											<div class="form-group col-sm-12">
+												<label for="" class="control-label">Upload Attachment</label>
+												<input type="file" class="form-control" placeholder="Upload Attachment">
+											</div>
+											<div class="form-group col-sm-12">
+												<label for="" class="control-label">Keywords</label>
+												<input type="text" class="form-control" placeholder="Keywords">
+											</div>
+											<div class="form-group col-sm-12">
+												<label for="" class="control-label">Chapter</label>
+												<select class="form-control" id="">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+												</select>
+											</div>
+											<div class="form-action col-sm-12 text-center">
+												<button type="submit" class="btn btn-primary">Submit</button>
+												<button type="reset" class="btn btn-default">Reset</button>
+											</div>
+									</div>
+									</form>
+								</div>
+
+					    </div>
+				</section>
+				<!-- Main Contents Ends -->
+			</section>
+			<!-- Content Ends -->
+			<!-- Footer Starts -->
+			<!-- <footer class="app-footer">
+				<div class="text-center">&copy; 2018, All Rights Reserved.</div>
+			</footer> -->
+			<!-- Footer Ends -->
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="assets/build/js/bundle.js"></script>
+</body>
+</html>

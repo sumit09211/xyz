@@ -2,25 +2,39 @@
     margin-bottom: 0;
 }
 
+// .control-label {
+//     font-weight: $font-weight-medium;
+//     color: #ccc;
+//     text-transform: uppercase;
+//     font-size: 10px;
+// }
+// .form-control {
+//     box-shadow: none;
+//     color: #c2c2c2;
+//     font-size: 13px;
+//     padding: .5rem 0;
+//     border: none;
+//     border-bottom: 1px solid #eee;
+//     border-radius: 0;
+// }
 .control-label {
-    font-weight: $font-weight-medium;
-    color: #ccc;
-    text-transform: uppercase;
-    font-size: 10px;
+  font-weight: 500;
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 .form-control {
-    box-shadow: none;
-    color: #c2c2c2;
-    font-size: 13px;
-    padding: .5rem 0;
-    border: none;
-    border-bottom: 1px solid #eee;
-    border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #c2c2c2;
+  font-size: 13px;
+  height: 41px;
 }
-.form-control:focus{
-    border-bottom-color: $primary;
-    box-shadow: none;
-}
+// .form-control:focus{
+//     border-bottom-color: $primary;
+//     box-shadow: none;
+// }
 
 
 input[type="file"]{
